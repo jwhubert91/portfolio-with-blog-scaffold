@@ -1,24 +1,24 @@
-# README
+# README for Portfolio Project - Made in Rails with a simple blog scaffold
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This course was built to walk you through a real world approach to full stack coding. This includes: backend development with Ruby on Rails, front end coding with HTML/CSS/JavaScript/jQuery, along with advanced ways to use SQL for database management.
 
-Things you may want to cover:
+* See bottom of page for diagram of abilities of full-stack engineers
 
-* Ruby version
+### Features
 
-* System dependencies
+- Ruby on Rails framework
+- HTML/CSS/jQuery front-end
+- SQL databse
 
-* Configuration
+### Code snippets:
 
-* Database creation
+```ruby
+def foo(bar)
+	puts "Hello nerd-ld!"
+end
+```
 
-* Database initialization
+### Demostration of full-stack engineer abilities:
 
-* How to run the test suite
+![Drag Racing](https://i.ytimg.com/vi/KEkrWRHCDQU/maxresdefault.jpg)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
