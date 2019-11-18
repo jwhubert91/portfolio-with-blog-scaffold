@@ -40,4 +40,18 @@ class WorksController < ApplicationController
     @portfolio_item = Work.find(params[:id])
   end
 
+  def destroy
+    # this performs lookup
+    @portfolio_item = Work.find(params[:id])
+    work_title = @portfolio_item.title
+
+    #this destroys the record
+    @portfolio_item.destroy
+
+    # this tells Rails what to do next
+    respond_to do |format|
+      format.html { redirect_to works_url, notice: 'Work #{work_title} was successfully destroyed.' }
+    end
+  end
+
 end
