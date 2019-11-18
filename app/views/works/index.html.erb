@@ -8,7 +8,7 @@
 <% @portfolio_items.each do |work| %>
 
 	<hr>
-	<p><%= link_to work.title, work_path(work.id) %></p>
+	<p><%= link_to work.title, work_show_path(work.id) %></p>
 	<p><%= work.subtitle %></p>
 	<p><%= work.body %></p>
 	<%= image_tag work.thumb_img unless work.thumb_img.nil? %>
