@@ -36,4 +36,8 @@ class WorksController < ApplicationController
     end
   end
 
+  def show
+    @portfolio_item = Work.find(params[:id])
+  end
+
 end

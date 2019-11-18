@@ -31,7 +31,7 @@ end
 		title: "Portfolio title: #{work_num}",
 		subtitle: "my great service number #{work_num}",
 		body: "Lorem ipsum tu ne cede nalis exquisite corpse dolor",
-		main_img: "http://placehold.it/600",
+		main_img: "http://placehold.it/600x400",
 		thumb_img: "http://placehold.it/350x250"
 		)
 end
