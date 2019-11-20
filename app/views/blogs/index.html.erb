@@ -5,16 +5,18 @@
 <table>
   <thead>
     <tr>
+      <th>Topic</th>
       <th>Title</th>
       <th>Body</th>
       <th>Status</th>
-      <th colspan="4"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @blogs.each do |blog| %>
       <tr>
+        <td><%= blog.topic.title %></td>
         <td><%= blog.title %></td>
         <td><%= blog.body %></td>
         <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>

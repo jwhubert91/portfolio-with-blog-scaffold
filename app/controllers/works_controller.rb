@@ -4,12 +4,17 @@ class WorksController < ApplicationController
 		@portfolio_items = Work.all
 	end
 
+  def angular
+    @angular_items = Work.angular
+  end
+
 	def new
 		@portfolio_item = Work.new
+    3.times { @portfolio_item.technologies.build }
 	end
 
 	def create
-    @portfolio_item = Work.new(params.require(:work).permit(:title, :subtitle, :body))
+    @portfolio_item = Work.new(params.require(:work).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
 
     respond_to do |format|
       if @portfolio_item.save
