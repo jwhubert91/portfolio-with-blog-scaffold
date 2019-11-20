@@ -50,3 +50,13 @@ Work.create!(
 		main_img: "http://placehold.it/600x400",
 		thumb_img: "http://placehold.it/350x250"
 )
+
+
+# dummy data for technologies
+3.times do |technology_num|
+	Work.last.technologies.create!(
+		name: "Technology #{technology_num}"
+	)
+end
+
+
