@@ -4,6 +4,10 @@ class WorksController < ApplicationController
 		@portfolio_items = Work.all
 	end
 
+  def angular
+    @angular_items = Work.angular
+  end
+
 	def new
 		@portfolio_item = Work.new
 	end
