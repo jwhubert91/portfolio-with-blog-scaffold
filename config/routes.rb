@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :works, except: [:show]
   get 'work/:id', to: 'works#show', as: 'work_show'
   get 'angular-items', to: 'works#angular'
